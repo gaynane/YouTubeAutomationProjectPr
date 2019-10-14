@@ -24,11 +24,7 @@ public class NavigationMenuTest extends HomePageTest {
         Assert.assertTrue(navigationMenu.getSearchField().isSelected());
         navigationMenu.getSearchField().clear();
         navigationMenu.getSearchField().sendKeys("Yerevan");
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
 
     }
 }
