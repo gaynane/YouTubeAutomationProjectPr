@@ -14,7 +14,7 @@ public class NavigationMenuTest extends HomePageTest {
         navigationMenu.getNavigationItem().click();
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -24,6 +24,22 @@ public class NavigationMenuTest extends HomePageTest {
         Assert.assertTrue(navigationMenu.getSearchField().isSelected());
         navigationMenu.getSearchField().clear();
         navigationMenu.getSearchField().sendKeys("Yerevan");
+
+        Assert.assertTrue(navigationMenu.getSearch().isDisplayed());
+        navigationMenu.getSearch().click();
+        navigationMenu.getSearch().submit();
+
+        Assert.assertTrue(navigationMenu.getVideoButton().isDisplayed());
+        navigationMenu.getVideoButton().click();
+
+        Assert.assertTrue(navigationMenu.getAppsButton().isDisplayed());
+        navigationMenu.getAppsButton().click();
+
+        Assert.assertTrue(navigationMenu.getSettingsButton().isDisplayed());
+        navigationMenu.getAppsButton().click();
+
+        Assert.assertTrue(navigationMenu.getSignIn().isDisplayed());
+        navigationMenu.getSignIn().click();
 
 
     }
