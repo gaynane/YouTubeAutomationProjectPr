@@ -13,13 +13,16 @@ public class NavigationMenuFactory extends BasePageFactory{
     @FindBy(css="#search")
     WebElement searchField;
 
-    @FindBy(css="")
+    @FindBy(css="#search-icon-legacy > yt-icon > svg")
+    WebElement search;
+
+    @FindBy(css="#button > yt-icon")
     WebElement videoButton;
 
     @FindBy(css="")
     WebElement appsButton;
 
-    @FindBy(css="input[]")
+    @FindBy(css="")
     WebElement settingsButton;
 
     @FindBy(css="input[value=signIn]")
@@ -40,6 +43,10 @@ public class NavigationMenuFactory extends BasePageFactory{
     public WebElement getSearchField(){
         return searchField;
     }
+    public WebElement getSearch() {
+        return search;
+    }
+
     public WebElement getVideoButton(){
         return videoButton;
     }

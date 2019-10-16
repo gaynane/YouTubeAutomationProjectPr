@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e823301e-cbc6-44f6-8614-d71966671be1" name="Default Changelist" comment="" />
+    <list default="true" id="e823301e-cbc6-44f6-8614-d71966671be1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/YouTubeAutomationProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/YouTubeAutomationProject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pages/NavigationMenuFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/NavigationMenuFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tests/NavigationMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/NavigationMenuTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +29,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1S0rH9s9a6sKx44ldsBqV0s7XGv" />
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -38,9 +53,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.NavigationMenuTest">
+  <component name="RunManager" selected="TestNG.NavigationMenuTest.TestNavigationMenuElements (1)">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="YouTubeAutomationProjectPb" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="YouTubeAutomationProjectPb" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProject" />
+      <module name="YouTubeAutomationProjectPb" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -50,24 +112,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageTest.check" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
-      <option name="METHOD_NAME" value="check" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -75,7 +119,7 @@
       </method>
     </configuration>
     <configuration name="NavigationMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProject" />
+      <module name="YouTubeAutomationProjectPb" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -91,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationMenuTest.setNavigationMenuElemants" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NavigationMenuTest.TestNavigationMenuElements (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="YouTubeAutomationProject" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +145,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
-      <option name="METHOD_NAME" value="setNavigationMenuElemants" />
+      <option name="METHOD_NAME" value="TestNavigationMenuElements" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationMenuTest.TestNavigationMenuElements" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouTubeAutomationProjectPb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
+      <option name="METHOD_NAME" value="TestNavigationMenuElements" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -110,7 +172,7 @@
       </method>
     </configuration>
     <configuration name="NavigationMenuTest.setNavigationMenuElements" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProject" />
+      <module name="YouTubeAutomationProjectPb" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -129,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NavigationMenuTest.TestNavigationMenuElements (1)" />
+        <item itemvalue="TestNG.NavigationMenuTest.TestNavigationMenuElements" />
+        <item itemvalue="TestNG.HomePageTest" />
         <item itemvalue="TestNG.NavigationMenuTest" />
         <item itemvalue="TestNG.NavigationMenuTest.setNavigationMenuElements" />
-        <item itemvalue="TestNG.NavigationMenuTest.setNavigationMenuElemants" />
-        <item itemvalue="TestNG.HomePageTest" />
-        <item itemvalue="TestNG.HomePageTest.check" />
       </list>
     </recent_temporary>
   </component>
@@ -149,5 +211,18 @@
       <updated>1570711263598</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
