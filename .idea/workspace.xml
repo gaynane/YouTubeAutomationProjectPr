@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e823301e-cbc6-44f6-8614-d71966671be1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/YouTubeAutomationProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/YouTubeAutomationProject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/NavigationMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/NavigationMenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/NavigationMenuFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/NavigationMenuFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tests/NavigationMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/NavigationMenuTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +18,10 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,7 +40,15 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -53,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.NavigationMenuTest.TestNavigationMenuElements (1)">
+  <component name="RunManager" selected="TestNG.NavigationMenuTest.checkLeftNavigationBarItemsWhenClickingHamburgerItem">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="YouTubeAutomationProjectPb" />
       <option name="VM_PARAMETERS" />
@@ -101,25 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProjectPb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomePageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NavigationMenuTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProjectPb" />
+      <module name="YouTubeAutomationProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -153,8 +145,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationMenuTest.TestNavigationMenuElements" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProjectPb" />
+    <configuration name="NavigationMenuTest.checkLeftNavigationBarItemsWhenClickingHamburgerItem" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouTubeAutomationProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -163,7 +155,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
-      <option name="METHOD_NAME" value="TestNavigationMenuElements" />
+      <option name="METHOD_NAME" value="checkLeftNavigationBarItemsWhenClickingHamburgerItem" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -171,8 +163,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationMenuTest.setNavigationMenuElements" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProjectPb" />
+    <configuration name="NavigationMenuTest.checkTheItemsNavigationMenuVisible" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouTubeAutomationProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -181,7 +173,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
-      <option name="METHOD_NAME" value="setNavigationMenuElements" />
+      <option name="METHOD_NAME" value="checkTheItemsNavigationMenuVisible" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationMenuTest.testNavigationMenuElements" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouTubeAutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
+      <option name="METHOD_NAME" value="testNavigationMenuElements" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.NavigationMenuTest.TestNavigationMenuElements (1)" />
-        <item itemvalue="TestNG.NavigationMenuTest.TestNavigationMenuElements" />
-        <item itemvalue="TestNG.HomePageTest" />
+        <item itemvalue="TestNG.NavigationMenuTest.checkLeftNavigationBarItemsWhenClickingHamburgerItem" />
+        <item itemvalue="TestNG.NavigationMenuTest.checkTheItemsNavigationMenuVisible" />
         <item itemvalue="TestNG.NavigationMenuTest" />
-        <item itemvalue="TestNG.NavigationMenuTest.setNavigationMenuElements" />
+        <item itemvalue="TestNG.NavigationMenuTest.testNavigationMenuElements" />
+        <item itemvalue="TestNG.NavigationMenuTest.TestNavigationMenuElements (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -224,5 +234,61 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/BasePageFactory.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/BasePageFactory.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/BasePage.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/BasePage.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/BasePage.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/BasePage.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/BasePage.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/SetupDriver.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/base/SetupDriver.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

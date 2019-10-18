@@ -15,54 +15,15 @@
             <version>4.0.0-alpha-3</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.0.0-beta7</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.0.0-beta7</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>3.7.1</version>
-            <scope>test</scope>
+            <version>7.0.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>3.7.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId> org.apache.cassandra</groupId>
-            <artifactId>cassandra-all</artifactId>
-            <version>0.8.1</version>
-
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.0.0-beta7</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
     <build>
@@ -79,11 +40,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
-<!--                <configuration>-->
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>TestNG.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
-<!--                </configuration>-->
+                <!--                <configuration>-->
+                <!--                    <suiteXmlFiles>-->
+                <!--                        <suiteXmlFile>TestNG.xml</suiteXmlFile>-->
+                <!--                    </suiteXmlFiles>-->
+                <!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
