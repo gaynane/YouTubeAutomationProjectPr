@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e823301e-cbc6-44f6-8614-d71966671be1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/VideoPlayFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tests/VideoPlayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/NavigationMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/NavigationMenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/NavigationMenuFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/NavigationMenuFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tests/NavigationMenuTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tests/NavigationMenuTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.NavigationMenuTest.checkLeftNavigationBarItemsWhenClickingHamburgerItem">
+  <component name="RunManager" selected="TestNG.VideoPlayTest.checkVideoPlayerItemsVisible">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="YouTubeAutomationProjectPb" />
       <option name="VM_PARAMETERS" />
@@ -127,24 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationMenuTest.TestNavigationMenuElements (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="YouTubeAutomationProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
-      <option name="METHOD_NAME" value="TestNavigationMenuElements" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NavigationMenuTest.checkLeftNavigationBarItemsWhenClickingHamburgerItem" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="YouTubeAutomationProject" />
       <extension name="coverage">
@@ -156,6 +138,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
       <option name="METHOD_NAME" value="checkLeftNavigationBarItemsWhenClickingHamburgerItem" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationMenuTest.checkNavigationBarItemsWhenClickingItems" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="YouTubeAutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
+      <option name="METHOD_NAME" value="checkNavigationBarItemsWhenClickingItems" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -181,7 +181,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationMenuTest.testNavigationMenuElements" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VideoPlayTest.checkVideoPlayerItemsVisible" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="YouTubeAutomationProject" />
       <extension name="coverage">
         <pattern>
@@ -190,8 +190,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.NavigationMenuTest" />
-      <option name="METHOD_NAME" value="testNavigationMenuElements" />
+      <option name="MAIN_CLASS_NAME" value="tests.VideoPlayTest" />
+      <option name="METHOD_NAME" value="checkVideoPlayerItemsVisible" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -201,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.VideoPlayTest.checkVideoPlayerItemsVisible" />
+        <item itemvalue="TestNG.NavigationMenuTest.checkNavigationBarItemsWhenClickingItems" />
+        <item itemvalue="TestNG.NavigationMenuTest" />
         <item itemvalue="TestNG.NavigationMenuTest.checkLeftNavigationBarItemsWhenClickingHamburgerItem" />
         <item itemvalue="TestNG.NavigationMenuTest.checkTheItemsNavigationMenuVisible" />
-        <item itemvalue="TestNG.NavigationMenuTest" />
-        <item itemvalue="TestNG.NavigationMenuTest.testNavigationMenuElements" />
-        <item itemvalue="TestNG.NavigationMenuTest.TestNavigationMenuElements (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +240,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pages/NavigationMenuFactory.java</url>
-          <line>119</line>
+          <line>34</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
