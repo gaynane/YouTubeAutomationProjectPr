@@ -19,7 +19,8 @@ public class NavigationMenuTest extends Hooks {
     @Test
     public void checkTheItemsNavigationMenuVisible() {
 
-        Assert.assertTrue(navigationMenu.getHamburgerItem().isDisplayed(),  "Hamburger menu is not display");
+        NavigationMenuFactory navigationMenu;
+        SoftAssert.assertTrue(navigationMenu.getHamburgerItem().isDisplayed(),  "Hamburger menu is not display");
         Assert.assertTrue(navigationMenu.getLogo().isDisplayed(), "Logo button is not display");
         Assert.assertTrue(navigationMenu.getSearchField().isSelected(), "Search field is not display");
         Assert.assertTrue(navigationMenu.getSearch().isDisplayed(), "Search button is not display");
@@ -83,6 +84,7 @@ public class NavigationMenuTest extends Hooks {
      @Test
     public void checkPageLeftNavigationBarItemsWhenClickingItems(){
         navigationMenu.getHamburgerItem().click();
+
         navigationMenu.getHomeButton().click();
         navigationMenu.getTrendingButton().click();
         navigationMenu.getSubscriptionsButton().click();
