@@ -2,77 +2,83 @@ package tests;
 
 import base.Hooks;
 import common.WaitActions;
-import org.testng.Assert;
+import constants.errorMessages.NavigationMenuErrorMessages;
+import constants.pages.NavigationMenuConstants;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.NavigationMenuFactory;
+
+import static org.testng.Assert.*;
 
 public class NavigationMenuTest extends Hooks {
     private NavigationMenuFactory navigationMenu;
+    SoftAssert softAssert = new SoftAssert();
 
     @BeforeClass
     public void setup(){
-        navigationMenu = new NavigationMenuFactory("http://www.youtube.com");
+        navigationMenu = new NavigationMenuFactory(NavigationMenuConstants.URL);
         WaitActions.waitSpecificTime(10000);
     }
 
     @Test
     public void checkTheItemsNavigationMenuVisible() {
 
-        NavigationMenuFactory navigationMenu;
-        SoftAssert.assertTrue(navigationMenu.getHamburgerItem().isDisplayed(),  "Hamburger menu is not display");
-        Assert.assertTrue(navigationMenu.getLogo().isDisplayed(), "Logo button is not display");
-        Assert.assertTrue(navigationMenu.getSearchField().isSelected(), "Search field is not display");
-        Assert.assertTrue(navigationMenu.getSearch().isDisplayed(), "Search button is not display");
-        Assert.assertTrue(navigationMenu.getVideoButton().isDisplayed(), "Video button is not display");
-        Assert.assertTrue(navigationMenu.getAppsButton().isDisplayed(), "Apps button is not display");
-        Assert.assertTrue(navigationMenu.getSettingsButton().isDisplayed(), "Settings button is not display");
-        Assert.assertTrue(navigationMenu.getSignIn().isDisplayed(), "SignIn button is not display");
+        softAssert.assertTrue(navigationMenu.getHamburgerItem().isDisplayed(), NavigationMenuErrorMessages.HAMBURGER_ITEM_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getLogo().isDisplayed(), NavigationMenuErrorMessages.LOGO_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSearchField().isSelected(), NavigationMenuErrorMessages.SEARCH_FIELD_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSearch().isDisplayed(), NavigationMenuErrorMessages.SEARCH_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getVideoButton().isDisplayed(), NavigationMenuErrorMessages.VIDEO_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getAppsButton().isDisplayed(), NavigationMenuErrorMessages.APPS_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSettingsButton().isDisplayed(), NavigationMenuErrorMessages.SETTINGS_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSignIn().isDisplayed(), NavigationMenuErrorMessages.SIGN_IN_ERROR_MESSAGE);
+        softAssert.assertAll();
     }
 
     @Test
     public void checkLeftNavigationBarItemsWhenClickingHamburgerItem(){
         navigationMenu.getHamburgerItem().click();
 
-        Assert.assertTrue(navigationMenu.getHomeButton().isDisplayed(), "Home button is not display");
-        Assert.assertTrue(navigationMenu.getTrendingButton().isDisplayed(), "Trending button is not display");
-        Assert.assertTrue(navigationMenu.getSubscriptionsButton().isDisplayed(), "Subscriptions button is not display");
-        Assert.assertTrue(navigationMenu.getLibraryButton().isDisplayed(), "Library button is not display");
-        Assert.assertTrue(navigationMenu.getHistoryButton().isDisplayed(), "History button is not display");
-        Assert.assertTrue(navigationMenu.getSignInLikeVideosText().isDisplayed(), "Text SignIn Like Videos is not display");
-        Assert.assertTrue(navigationMenu.getSignInButton().isDisplayed(), "SignIn button is not display");
-        Assert.assertTrue(navigationMenu.getBestOfYouTubeText().isDisplayed(), "Text Best of Youtube is no- display");
-        Assert.assertTrue(navigationMenu.getMusicButton().isDisplayed(), "Music button is not display");
-        Assert.assertTrue(navigationMenu.getSportsButton().isDisplayed(), "Sports button is not display");
-        Assert.assertTrue(navigationMenu.getGamingButton().isDisplayed(), "Gaming button is not display");
-        Assert.assertTrue(navigationMenu.getNewsButton().isDisplayed(), "News button is not display");
-        Assert.assertTrue(navigationMenu.getLiveBlackButton().isDisplayed(), "Live black button is not display");
-        Assert.assertTrue(navigationMenu.getFashionButton().isDisplayed(), "Fashion button is not display");
-        Assert.assertTrue(navigationMenu.getVideo360Button().isDisplayed(), "360 Video button is not display");
-        Assert.assertTrue(navigationMenu.getBrowsChannels().isDisplayed(), "Brows channels button is not display");
-        Assert.assertTrue(navigationMenu.getMoreFromYouTubeText().isDisplayed(), "SignIn button is not display");
-        Assert.assertTrue(navigationMenu.getSettingsLeftButton().isDisplayed(), "Settings left button is not display");
-        Assert.assertTrue(navigationMenu.getReportHistoryButton().isDisplayed(), "Report history button is not display");
-        Assert.assertTrue(navigationMenu.getHelpButton().isDisplayed(), "Help button is not display");
-        Assert.assertTrue(navigationMenu.getSendFeedbackButton().isDisplayed(), "Send Feedback button is not display");
-        Assert.assertTrue(navigationMenu.getAbout().isDisplayed(), "About item is not display");
-        Assert.assertTrue(navigationMenu.getPress().isDisplayed(), "Press item is not display");
-        Assert.assertTrue(navigationMenu.getCopyright().isDisplayed(), "Copyright item is not display");
-        Assert.assertTrue(navigationMenu.getContactUs().isDisplayed(), "Contact us item is not display");
-        Assert.assertTrue(navigationMenu.getCreators().isDisplayed(), "Creators item is not display");
-        Assert.assertTrue(navigationMenu.getAdvertise().isDisplayed(), "Advertise item is not display");
-        Assert.assertTrue(navigationMenu.getDevelopers().isDisplayed(), "Developers item is not display");
-        Assert.assertTrue(navigationMenu.getTerms().isDisplayed(), "Text Terms item is not display");
-        Assert.assertTrue(navigationMenu.getPrivacy().isDisplayed(), "Text Privacy item is not display");
-        Assert.assertTrue(navigationMenu.getPolicy().isDisplayed(), "Text Policy & Safety item is not display");
-        Assert.assertTrue(navigationMenu.getTestNewFeatures().isDisplayed(), "Test new features item is not display");
-
+        softAssert.assertTrue(navigationMenu.getHomeButton().isDisplayed(), NavigationMenuErrorMessages.HOME_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getTrendingButton().isDisplayed(), NavigationMenuErrorMessages.TRENDING_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSubscriptionsButton().isDisplayed(), NavigationMenuErrorMessages.SUBSCRIPTIONS_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getLibraryButton().isDisplayed(), NavigationMenuErrorMessages.LIBRARY_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getHistoryButton().isDisplayed(), NavigationMenuErrorMessages.HISTORY_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSignInLikeVideosText().isDisplayed(), NavigationMenuErrorMessages.SIGNIN_LIKE_VIDEOS_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSignInButton().isDisplayed(), NavigationMenuErrorMessages.SIGNIN_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getBestOfYouTubeText().isDisplayed(), NavigationMenuErrorMessages.BEST_OF_YOUTUBE_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getMusicButton().isDisplayed(), NavigationMenuErrorMessages.MUSIC_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSportsButton().isDisplayed(),NavigationMenuErrorMessages.SPORTS_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getGamingButton().isDisplayed(), NavigationMenuErrorMessages.GAMING_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getNewsButton().isDisplayed(), NavigationMenuErrorMessages.NEWS_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getLiveBlackButton().isDisplayed(), NavigationMenuErrorMessages.LIVE_BLACK_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getFashionButton().isDisplayed(), NavigationMenuErrorMessages.FASHION_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getVideo360Button().isDisplayed(), NavigationMenuErrorMessages.VIDEO360_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getBrowsChannels().isDisplayed(), NavigationMenuErrorMessages.BROWS_CHANNELS_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getMoreFromYouTubeText().isDisplayed(), NavigationMenuErrorMessages.MORE_FROM_YOUTUBE_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSettingsLeftButton().isDisplayed(), NavigationMenuErrorMessages.SETTINGS_LEFT_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getReportHistoryButton().isDisplayed(), NavigationMenuErrorMessages.REPORT_HISTORY_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getHelpButton().isDisplayed(), NavigationMenuErrorMessages.HELP_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getSendFeedbackButton().isDisplayed(), NavigationMenuErrorMessages.SEND_FEEDBACK_BUTTON__ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getAbout().isDisplayed(), NavigationMenuErrorMessages.ABOUT_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getPress().isDisplayed(), NavigationMenuErrorMessages.PRESS__ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getCopyright().isDisplayed(), NavigationMenuErrorMessages.COPYRIGHT__ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getContactUs().isDisplayed(), NavigationMenuErrorMessages.CONTACTUS_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getCreators().isDisplayed(), NavigationMenuErrorMessages.CREATORS_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getAdvertise().isDisplayed(), NavigationMenuErrorMessages.ADVERTISE_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getDevelopers().isDisplayed(), NavigationMenuErrorMessages.DEVELOPERS_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getTerms().isDisplayed(), NavigationMenuErrorMessages.TERMS_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getPrivacy().isDisplayed(), NavigationMenuErrorMessages.PRIVACY_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getPolicy().isDisplayed(), NavigationMenuErrorMessages.POLICY_ERROR_MESSAGE);
+        softAssert.assertTrue(navigationMenu.getTestNewFeatures().isDisplayed(), NavigationMenuErrorMessages.TEST_NEW_FEATURES_ERROR_MESSAGE);
+        softAssert.assertAll();
     }
 
     @Test
     public void checkNavigationBarItemsWhenClickingItems() {
         navigationMenu.getLogo().click();
-        navigationMenu.getSearchField().sendKeys("Stepanavan");
+
+        navigationMenu.getSearchField().sendKeys();
         navigationMenu.getSearch().submit();
         navigationMenu.getVideoButton().click();
         navigationMenu.getSettingsButton().click();

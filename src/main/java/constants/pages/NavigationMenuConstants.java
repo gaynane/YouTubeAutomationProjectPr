@@ -7,130 +7,47 @@ import pages.NavigationMenuFactory;
 
 public class NavigationMenuConstants {
 
-    @FindBy(css="#guide-icon")
-    private WebElement hamburgerItem;
-
-    @FindBy(css="#logo-icon-container")
-    private WebElement logo;
-
-    @FindBy(css="#search-input")
-    private WebElement searchField;
-
-    @FindBy(css="#search-icon-legacy > yt-icon > svg")
-    private WebElement search;
-
-    @FindBy(css="[aria-label=Create a video or post]")
-    private WebElement videoButton;
-
-    @FindBy(css="[aria-label=YouTube apps")
-    private WebElement appsButton;
-
-    @FindBy(css="[aria-label=Settings]")
-    private WebElement settingsButton;
-
-    @FindBy(css="[aria-label=Sign in]")
-    private WebElement signIn;
-
-    @FindBy(css="a[title='Home']")
-    private WebElement homeButton;
-
-    @FindBy(css="a[title='Trending']")
-    private WebElement trendingButton;
-
-    @FindBy(css="a[title='Subscriptions']")
-    private WebElement subscriptionsButton;
-
-    @FindBy(css="a[title='Library']")
-    private WebElement libraryButton;
-
-    @FindBy(css="a[title='Trending']")
-    private WebElement historyButton;
-
-    @FindBy(css="a[title='History']")
-    private WebElement signInLikeVideosText;
-
-    @FindBy(css="yt-formatted-string:contains('Sign in to like videos, comment, and subscribe.')")
-    private WebElement signInButton;
-
-    @FindBy(css="a[title='Gaming']")
-    private  WebElement gamingButton;
-
-    @FindBy(css="a[title='Music']")
-    private  WebElement musicButton;
-
-    @FindBy(css="a[title='Sports']")
-    private WebElement sportsButton;
-
-    @FindBy(css="a[title='News']")
-    private  WebElement newsButton;
-
-    @FindBy(css="")
-    private  WebElement bestOfYouTubeText;
-
-    @FindBy(css="a[title='Live']")
-    private  WebElement liveBlackButton;
-
-    @FindBy(css="a[title='Fashion']")
-    private  WebElement fashionButton;
-
-    @FindBy(css="a[title='360° Video']")
-    private WebElement video360Button;
-
-    @FindBy(css="a[title='Browse channels']")
-    private WebElement browsChannels;
-
-    @FindBy(css="yt-formatted-string:contains('More from TouTube')")
-    private WebElement moreFromYouTubeText;
-
-
-    @FindBy(css="")
-    WebElement liveRedButton;
-
-    @FindBy(css="a[title='Settings']")
-    private WebElement settingsLeftButton;
-
-    @FindBy(css="a[title='Report history']")
-    WebElement reportHistoryButton;
-
-    @FindBy(css="a[title='Help']")
-    WebElement helpButton;
-
-    @FindBy(css="a[title='Send feedback']")
-    WebElement sendFeedbackButton;
-
-    @FindBy(css="a.contains('About')")
-    WebElement about;
-
-    @FindBy(css="a.contains('Press')")
-    WebElement press;
-
-    @FindBy(css="a.contains('Copyright')")
-    WebElement copyright;
-
-    @FindBy(css="a.contains('Contact us')")
-    WebElement contactUs;
-
-    @FindBy(css="a.contains('Creators')")
-    WebElement creators;
-
-    @FindBy(css="a.contains('Advertise')")
-    WebElement advertise;
-
-    @FindBy(css="a.contains('Developers')")
-    WebElement developers;
-
-    @FindBy(css="a.contains('Terms')")
-    WebElement terms;
-
-    @FindBy(css="a.contains('Privacy')")
-    WebElement privacy;
-
-    @FindBy(css="a.contains('Policy & Safety')")
-    WebElement policy;
-
-    @FindBy(css="a.contains('Test new features')")
-    WebElement testNewFeatures;
-
-
+    public static final String URL = "http://www.youtube.com";
+    public static final String HAMBURGERITEM_LOCATOR ="#guide-icon";
+    public static final String LOGO_LOCATOR ="#logo-icon-container";
+    public static final String SEARCHFIELD_LOCATOR ="#search-input";
+    public static final String SEARCH_LOCATOR ="#search-icon-legacy > yt-icon > svg";
+    public static final String VIDEOBUTTON_LOCATOR="[aria-label=Create a video or post]";
+    public static final String APPS_BUTTON_LOCATOR ="[aria-label=YouTube apps";
+    public static final String SETTINGS_BUTTON_LOCATOR ="[aria-label=Settings]";
+    public static final String SIGNIN_LOCATOR="[aria-label=Sign in]";
+    public static final String HOME_BUTTON_LOCATOR ="a[title='Home']";
+    public static final String TRENDING_BUTTON_LOCATOR ="a[title='Trending']";
+    public static final String SUBSCRIPTIONS_BUTTON_LOCATOR = "a[title='Subscriptions']";
+    public static final String LIBRARY_BUTTON_LOCATOR = "a[title='Library']";
+    public static final String HISTORY_BUTTON_LOCATOR = "a[title='History']";
+    public static final String SIGNIN_LIKE_VIDEOS_TEXT_LOCATOR = "";
+    public static final String SIGNIN_BUTTON_LOCATOR = "yt-formatted-string:contains('Sign in to like videos, comment, and subscribe.')";
+    public static final String GAMING_BUTTON_LOCATOR = "a[title='Gaming']";
+    public static final String MUSIC_BUTTON_LOCATOR ="a[title='Music']";
+    public static final String SPORTS_BUTTON_LOCATOR ="a[title='Sports']";
+    public static final String NEWS_BUTTON_LOCATOR = "a[title='News']";
+    public static final String BEST_OF_YOUTUBE_LOCATOR ="";
+    public static final String LIVE_BLACK_BUTTON_LOCATOR ="a[title='Live']";
+    public static final String FASHION_BUTTON_LOCATOR ="a[title='Fashion']";
+    public static final String VIDEO360_BUTTON_LOCATOR ="a[title='360° Video']";
+    public static final String BROWS_CHANNELS_LOCATOR ="a[title='Browse channels']";
+    public static final String MORE_FROM_YOUTUBE_LOCATOR ="yt-formatted-string:contains('More from TouTube')";
+    public static final String LIVE_RED_BUTTON_LOCATOR ="";
+    public static final String SETTINGS_LEFT_BUTTON_LOCATOR="a[title='Settings']";
+    public static final String REPORT_HISTORY_BUTTON_LOCATOR="a[title='Report history']";
+    public static final String HELP_BUTTON_LOCATOR="a[title='Help']";
+    public static final String SEND_FEEDBACK_BUTTON_LOCATOR ="a[title='Send feedback']";
+    public static final String ABOUT_LOCATOR="a.contains('About')";
+    public static final String PRESS_LOCATOR="a.contains('Press')";
+    public static final String COPYRIGHT_LOCATOR="a.contains('Copyright')";
+    public static final String CONTACT_US_LOCATOR="a.contains('Contact us')";
+    public static final String CREATORS_LOCATOR="a.contains('Creators')";
+    public static final String ADVERTISE_LOCATOR ="a.contains('Advertise')";
+    public static final String DEVELOPERS_LOCATOR ="a.contains('Developers')";
+    public static final String TERMS_LOCATOR ="a.contains('Terms')";
+    public static final String PRIVACY_LOCATOR ="a.contains('Privacy')";
+    public static final String POLICY_LOCATOR ="a.contains('Policy & Safety')";
+    public static final String TEST_NEW_FEATURES_LOCATOR="a.contains('Test new features')";
 
 }

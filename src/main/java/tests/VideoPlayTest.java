@@ -2,15 +2,17 @@ package tests;
 
 import base.Hooks;
 import common.WaitActions;
+import constants.errorMessages.VideoPlayErrorMessage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.HomePageFactory;
 import pages.VideoPlayFactory;
 
 public class VideoPlayTest  {
     private VideoPlayFactory videoPlay;
-
+    SoftAssert softAssert;
     @BeforeClass
     public void setup() {
         videoPlay = new VideoPlayFactory();
@@ -20,15 +22,15 @@ public class VideoPlayTest  {
     @Test
     public void checkVideoPlayerItemsVisible() {
 
-        Assert.assertTrue(videoPlay.getPlayButton().isDisplayed(), "The Play button is not display");
-        Assert.assertTrue(videoPlay.getPlayNextButton().isDisplayed(), "The Play Next button is not display");
-        Assert.assertTrue(videoPlay.getMuteButton().isDisplayed(), "The Mute button is not display");
-        Assert.assertTrue(videoPlay.getDurationVideo().isDisplayed(), "The duration video is not display");
-        Assert.assertTrue(videoPlay.getTimeLine().isDisplayed(), "The TimeLine is not display");
-        Assert.assertTrue(videoPlay.getSettingsButton().isDisplayed(), "The Settings button is not display");
-        Assert.assertTrue(videoPlay.getMiniplayerButton().isDisplayed(), "The Miniplayer button is not display");
-        Assert.assertTrue(videoPlay.getTheaterModeButton().isDisplayed(), "The Theater mode button is not display");
-        Assert.assertTrue(videoPlay.getFullScreenButton().isDisplayed(), "The Full screen button is not display");
+        softAssert.assertTrue(videoPlay.getPlayButton().isDisplayed(), VideoPlayErrorMessage.PLAY_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getPlayNextButton().isDisplayed(), VideoPlayErrorMessage.PLAY_NEXT_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getMuteButton().isDisplayed(), VideoPlayErrorMessage.MUTE_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getDurationVideo().isDisplayed(), VideoPlayErrorMessage.DURATION_VIDEO_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getTimeLine().isDisplayed(), VideoPlayErrorMessage.TIME_LINE_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getSettingsButton().isDisplayed(), VideoPlayErrorMessage.VIDEO_SETTINGS_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getMiniplayerButton().isDisplayed(), VideoPlayErrorMessage.MINIPLAYER_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getTheaterModeButton().isDisplayed(), VideoPlayErrorMessage.THEATER_MODE_BUTTON_ERROR_MESSAGE);
+        softAssert.assertTrue(videoPlay.getFullScreenButton().isDisplayed(), VideoPlayErrorMessage.FULL_SCREEN_BUTTON_ERROR_MESSAGE);
     }
 
     @Test

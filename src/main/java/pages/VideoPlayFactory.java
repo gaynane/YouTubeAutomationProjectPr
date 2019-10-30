@@ -1,40 +1,41 @@
 package pages;
 
+import constants.pages.VideoPlayConstants;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class VideoPlayFactory extends BasePageFactory {
-    @FindBy(css="")
+public class VideoPlayFactory extends HomePageFactory {
+    @FindBy(css= VideoPlayConstants.VIDEO_PLAYING_LOCATOR)
     WebElement videoPlaying;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.TIME_LINE_LOCATOR)
     WebElement timeLine;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.PLAY_BUTTON_LOCATOR)
     WebElement playButton;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.PLAY_NEXT_BUTTON_LOCATOR)
     WebElement playNextButton;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.DURATION_VIDEO_LOCATOR)
     WebElement durationVideo;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.SETTINGS_BUTTON_LOCATOR)
     WebElement settingsButton;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.MINI_PLAYER_BUTTON_LOCATOR)
     WebElement miniplayerButton;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.THEATER_MODE_BUTTON_LOCATOR)
     WebElement theaterModeButton;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.FULL_SCREEN_BUTTON_LOCATOR)
     WebElement fullScreenButton;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.VIDEO_PAUSING_LOCATOR)
     WebElement videoPausing;
 
-    @FindBy(css="")
+    @FindBy(css= VideoPlayConstants.MUTE_BUTTON_LOCATOR)
     WebElement muteButton;
 
     public VideoPlayFactory(){

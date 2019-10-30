@@ -1,60 +1,51 @@
 package constants.errorMessages;
 
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+import pages.NavigationMenuFactory;
+
 public class NavigationMenuErrorMessages {
-    SoftAssert softAssert = new SoftAssert();
 
-    @Test
-    public void checkTheItemsNavigationMenuVisibleErrorMessage() {
-        SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(navigationMenu.getHamburgerItem().isDisplayed(),  "Hamburger menu is not display");
-        softAssert.assertTrue(navigationMenu.getLogo().isDisplayed(), "Logo button is not display");
-        softAssert.assertTrue(navigationMenu.getSearchField().isSelected(), "Search field is not display");
-        softAssert.assertTrue(navigationMenu.getSearch().isDisplayed(), "Search button is not display");
-        softAssert.assertTrue(navigationMenu.getVideoButton().isDisplayed(), "Video button is not display");
-        softAssert.assertTrue(navigationMenu.getAppsButton().isDisplayed(), "Apps button is not display");
-        softAssert.assertTrue(navigationMenu.getSettingsButton().isDisplayed(), "Settings button is not display");
-        softAssert.assertTrue(navigationMenu.getSignIn().isDisplayed(), "SignIn button is not display");
+    public static final String  HAMBURGER_ITEM_ERROR_MESSAGE = "Hamburger menu is not display";
+    public static final String LOGO_ERROR_MESSAGE = "Logo button is not display";
+    public static final String SEARCH_FIELD_ERROR_MESSAGE= "Search field is not display";
+    public static final String SEARCH_ERROR_MESSAGE = "Search button is not display";
+    public static final String VIDEO_BUTTON_ERROR_MESSAGE =  "Video button is not display";
+    public static final String APPS_BUTTON_ERROR_MESSAGE = "Apps button is not display";
+    public static final String SETTINGS_BUTTON_ERROR_MESSAGE= "Settings button is not display";
+    public static final String SIGN_IN_ERROR_MESSAGE = "SignIn button is not display";
 
-        softAssert.assertAll();
-    }
-
-    @Test
-    public void checkLeftNavigationBarItemsWhenClickingHamburgerItemErrorMessage(){
-        navigationMenu.getHamburgerItem().click();
-
-        softAssert.assertTrue(navigationMenu.getHomeButton().isDisplayed(), "Home button is not display");
-        softAssert.assertTrue(navigationMenu.getTrendingButton().isDisplayed(), "Trending button is not display");
-        softAssert.assertTrue(navigationMenu.getSubscriptionsButton().isDisplayed(), "Subscriptions button is not display");
-        softAssert.assertTrue(navigationMenu.getLibraryButton().isDisplayed(), "Library button is not display");
-        softAssert.assertTrue(navigationMenu.getHistoryButton().isDisplayed(), "History button is not display");
-        softAssert.assertTrue(navigationMenu.getSignInLikeVideosText().isDisplayed(), "Text SignIn Like Videos is not display");
-        softAssert.assertTrue(navigationMenu.getSignInButton().isDisplayed(), "SignIn button is not display");
-        softAssert.assertTrue(navigationMenu.getBestOfYouTubeText().isDisplayed(), "Text Best of Youtube is no- display");
-        softAssert.assertTrue(navigationMenu.getMusicButton().isDisplayed(), "Music button is not display");
-        softAssert.assertTrue(navigationMenu.getSportsButton().isDisplayed(), "Sports button is not display");
-        softAssert.assertTrue(navigationMenu.getGamingButton().isDisplayed(), "Gaming button is not display");
-        softAssert.assertTrue(navigationMenu.getNewsButton().isDisplayed(), "News button is not display");
-        softAssert.assertTrue(navigationMenu.getLiveBlackButton().isDisplayed(), "Live black button is not display");
-        softAssert.assertTrue(navigationMenu.getFashionButton().isDisplayed(), "Fashion button is not display");
-        softAssert.assertTrue(navigationMenu.getVideo360Button().isDisplayed(), "360 Video button is not display");
-        softAssert.assertTrue(navigationMenu.getBrowsChannels().isDisplayed(), "Brows channels button is not display");
-        softAssert.assertTrue(navigationMenu.getMoreFromYouTubeText().isDisplayed(), "SignIn button is not display");
-        softAssert.assertTrue(navigationMenu.getSettingsLeftButton().isDisplayed(), "Settings left button is not display");
-        softAssert.assertTrue(navigationMenu.getReportHistoryButton().isDisplayed(), "Report history button is not display");
-        softAssert.assertTrue(navigationMenu.getHelpButton().isDisplayed(), "Help button is not display");
-        softAssert.assertTrue(navigationMenu.getSendFeedbackButton().isDisplayed(), "Send Feedback button is not display");
-        softAssert.assertTrue(navigationMenu.getAbout().isDisplayed(), "About item is not display");
-        softAssert.assertTrue(navigationMenu.getPress().isDisplayed(), "Press item is not display");
-        softAssert.assertTrue(navigationMenu.getCopyright().isDisplayed(), "Copyright item is not display");
-        softAssert.assertTrue(navigationMenu.getContactUs().isDisplayed(), "Contact us item is not display");
-        softAssert.assertTrue(navigationMenu.getCreators().isDisplayed(), "Creators item is not display");
-        softAssert.assertTrue(navigationMenu.getAdvertise().isDisplayed(), "Advertise item is not display");
-        softAssert.assertTrue(navigationMenu.getDevelopers().isDisplayed(), "Developers item is not display");
-        softAssert.assertTrue(navigationMenu.getTerms().isDisplayed(), "Text Terms item is not display");
-        softAssert.assertTrue(navigationMenu.getPrivacy().isDisplayed(), "Text Privacy item is not display");
-        softAssert.assertTrue(navigationMenu.getPolicy().isDisplayed(), "Text Policy & Safety item is not display");
-        softAssert.assertTrue(navigationMenu.getTestNewFeatures().isDisplayed(), "Test new features item is not display");
-        softAssert.assertAll();
-    }
+    public static final String HOME_BUTTON_ERROR_MESSAGE = "Home button is not display";
+    public static final String TRENDING_BUTTON_ERROR_MESSAGE = "Trending button is not display";
+    public static final String SUBSCRIPTIONS_BUTTON_ERROR_MESSAGE = "Subscriptions button is not display";
+    public static final String LIBRARY_BUTTON_ERROR_MESSAGE = "Library button is not display";
+    public static final String HISTORY_BUTTON_ERROR_MESSAGE = "History button is not display";
+    public static final String SIGNIN_LIKE_VIDEOS_ERROR_MESSAGE = "Text SignIn Like Videos is not display";
+    public static final String SIGNIN_BUTTON_ERROR_MESSAGE = "SignIn button is not display";
+    public static final String BEST_OF_YOUTUBE_ERROR_MESSAGE = "Text Best of Youtube is no- display";
+    public static final String MUSIC_BUTTON_ERROR_MESSAGE = "Music button is not display";
+    public static final String SPORTS_BUTTON_ERROR_MESSAGE = "Sports button is not display";
+    public static final String GAMING_BUTTON_ERROR_MESSAGE = "Gaming button is not display";
+    public static final String NEWS_BUTTON_ERROR_MESSAGE = "News button is not display";
+    public static final String LIVE_BLACK_BUTTON_ERROR_MESSAGE = "Live black button is not display";
+    public static final String FASHION_BUTTON_ERROR_MESSAGE = "Fashion button is not display";
+    public static final String VIDEO360_BUTTON_ERROR_MESSAGE = "360 Video button is not display";
+    public static final String BROWS_CHANNELS_ERROR_MESSAGE= "Brows channels button is not display";
+    public static final String MORE_FROM_YOUTUBE_ERROR_MESSAGE = "SignIn button is not display";
+    public static final String SETTINGS_LEFT_BUTTON_ERROR_MESSAGE = "Settings left button is not display";
+    public static final String REPORT_HISTORY_BUTTON_ERROR_MESSAGE = "Report history button is not display";
+    public static final String HELP_BUTTON_ERROR_MESSAGE = "Help button is not display";
+    public static final String SEND_FEEDBACK_BUTTON__ERROR_MESSAGE = "Send Feedback button is not display";
+    public static final String ABOUT_ERROR_MESSAGE= "About item is not display";
+    public static final String PRESS__ERROR_MESSAGE = "Press item is not display";
+    public static final String COPYRIGHT__ERROR_MESSAGE = "Copyright item is not display";
+    public static final String CONTACTUS_ERROR_MESSAGE = "Contact us item is not display";
+    public static final String CREATORS_ERROR_MESSAGE = "Creators item is not display";
+    public static final String ADVERTISE_ERROR_MESSAGE = "Advertise item is not display";
+    public static final String DEVELOPERS_ERROR_MESSAGE = "Developers item is not display";
+    public static final String TERMS_ERROR_MESSAGE = "Text Terms item is not display";
+    public static final String PRIVACY_ERROR_MESSAGE= "Text Privacy item is not display";
+    public static final String POLICY_ERROR_MESSAGE= "Text Policy & Safety item is not display";
+    public static final String TEST_NEW_FEATURES_ERROR_MESSAGE = "Test new features item is not display";
 
 }
