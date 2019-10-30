@@ -14,16 +14,16 @@ public class NavigationMenuFactory extends BasePageFactory{
      }
 
     @FindBy(css= NavigationMenuConstants.HAMBURGERITEM_LOCATOR)
-    private WebElement hamburgerItem;
+     WebElement hamburgerItem;
 
     @FindBy(css = NavigationMenuConstants.LOGO_LOCATOR)
-    private WebElement logo;
+    WebElement logo;
 
     @FindBy(css = NavigationMenuConstants.SEARCHFIELD_LOCATOR)
-    private WebElement searchField;
+    WebElement searchField;
 
     @FindBy(css= NavigationMenuConstants.SEARCH_LOCATOR)
-    private WebElement search;
+    WebElement search;
 
     @FindBy(css= NavigationMenuConstants.VIDEOBUTTON_LOCATOR)
     private WebElement videoButton;

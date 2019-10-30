@@ -12,7 +12,7 @@ import pages.VideoPlayFactory;
 
 public class VideoPlayTest  {
     private VideoPlayFactory videoPlay;
-    SoftAssert softAssert;
+
     @BeforeClass
     public void setup() {
         videoPlay = new VideoPlayFactory();
@@ -21,7 +21,7 @@ public class VideoPlayTest  {
 
     @Test
     public void checkVideoPlayerItemsVisible() {
-
+        SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(videoPlay.getPlayButton().isDisplayed(), VideoPlayErrorMessage.PLAY_BUTTON_ERROR_MESSAGE);
         softAssert.assertTrue(videoPlay.getPlayNextButton().isDisplayed(), VideoPlayErrorMessage.PLAY_NEXT_BUTTON_ERROR_MESSAGE);
         softAssert.assertTrue(videoPlay.getMuteButton().isDisplayed(), VideoPlayErrorMessage.MUTE_BUTTON_ERROR_MESSAGE);
@@ -31,10 +31,12 @@ public class VideoPlayTest  {
         softAssert.assertTrue(videoPlay.getMiniplayerButton().isDisplayed(), VideoPlayErrorMessage.MINIPLAYER_BUTTON_ERROR_MESSAGE);
         softAssert.assertTrue(videoPlay.getTheaterModeButton().isDisplayed(), VideoPlayErrorMessage.THEATER_MODE_BUTTON_ERROR_MESSAGE);
         softAssert.assertTrue(videoPlay.getFullScreenButton().isDisplayed(), VideoPlayErrorMessage.FULL_SCREEN_BUTTON_ERROR_MESSAGE);
+        softAssert.assertAll();
     }
 
     @Test
     public void checkVideoPlayerItemsWhenClicking(){
+        SoftAssert softAssert = new SoftAssert();
         videoPlay.getPlayButton().click();
         videoPlay.getPlayNextButton().click();
         videoPlay.getMuteButton().click();

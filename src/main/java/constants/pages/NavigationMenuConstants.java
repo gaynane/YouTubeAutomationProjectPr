@@ -50,4 +50,42 @@ public class NavigationMenuConstants {
     public static final String POLICY_LOCATOR ="a.contains('Policy & Safety')";
     public static final String TEST_NEW_FEATURES_LOCATOR="a.contains('Test new features')";
 
+    //click
+    public static final String LOGO_EXPECTED_URL = "https://www.youtube.com/";
+    public static final String VIDEO_BUTTON_EXPECTED_URL ="";
+    public static final String SETTINGS_BUTTON_EXPECTED_URL = "";
+    public static final String APPS_BUTTON_EXPECTED_URL ="";
+    public static final String SIGNIN_EXPECTED_URL ="https://accounts.google.com/signin/v2/identifier?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Dru%26next%3D%252F&hl=ru&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+
+    public static final String HAMBURGERITEM_EXPECTED_URL ="";
+    public static final String HOME_BUTTON_EXPECTED_URL ="https://www.youtube.com/";
+    public static final String TRENDING_BUTTON_EXPECTED_URL ="https://www.youtube.com/feed/trending";
+    public static final String SUBSCRIPTIONS_BUTTON_EXPECTED_URL ="https://www.youtube.com/feed/subscriptions";
+    public static final String LIBRARY_BUTTON_EXPECTED_URL ="https://www.youtube.com/feed/subscriptions";
+    public static final String HISTORY_BUTTON_EXPECTED_URL ="https://www.youtube.com/feed/history";
+    public static final String MUSIC_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ";
+    public static final String SPORTS_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw";
+    public static final String GAMING_BUTTON_EXPECTED_URL ="https://www.youtube.com/gaming";
+    public static final String NEWS_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw";
+    public static final String LIVE_BLACK_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig";
+    public static final String FASHION_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig";
+    public static final String VIDEO360_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UCzuqhhs6NWbgTzMuM09WKDQ";
+    public static final String BROWS_CHANNELS_EXPECTED_URL ="https://www.youtube.com/feed/guide_builder";
+    public static final String LIVE_RED_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig";
+    public static final String SETTINGS_LEFT_BUTTON_EXPECTED_URL ="https://accounts.google.com/signin/v2/identifier?service=youtube&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26hl%3Den%26feature%3Dredirect_login%26action_handle_signin%3Dtrue%26next%3D%252Faccount%253Fpbjreload%253D10&uilel=3&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+    public static final String REPORT_HISTORY_BUTTON_EXPECTED_URL ="https://www.youtube.com/reporthistory";
+    public static final String HELP_BUTTON_EXPECTED_URL ="";
+    public static final String SEND_FEEDBACK_BUTTON_EXPECTED_URL ="";
+    public static final String ABOUT_EXPECTED_URL ="https://www.youtube.com/about/";
+    public static final String PRESS_EXPECTED_URL ="https://www.youtube.com/about/press/";
+    public static final String COPYRIGHT_EXPECTED_URL ="https://www.youtube.com/about/copyright/#support-and-troubleshooting";
+    public static final String CONTACTUS_EXPECTED_URL ="https://www.youtube.com/t/contact_us";
+    public static final String CREATORS_EXPECTED_URL ="https://www.youtube.com/creators/";
+    public static final String ADVERTISE_EXPECTED_URL ="https://www.youtube.com/ads/";
+    public static final String DEVELOPERS_EXPECTED_URL ="https://www.youtube.com/yt/dev/";
+    public static final String TERMS_EXPECTED_URL ="https://www.youtube.com/t/terms";
+    public static final String PRIVACY_EXPECTED_URL ="https://policies.google.com/privacy?hl=en";
+    public static final String POLICY_EXPECTED_URL ="https://www.youtube.com/about/policies/#community-guidelines";
+    public static final String TEST_NEW_FEATURES_EXPECTED_URL ="https://www.youtube.com/new";
+
 }
