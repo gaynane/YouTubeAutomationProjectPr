@@ -74,7 +74,7 @@ public class NavigationMenuConstants {
     public static final String LIVE_RED_BUTTON_EXPECTED_URL ="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig";
     public static final String SETTINGS_LEFT_BUTTON_EXPECTED_URL ="https://accounts.google.com/signin/v2/identifier?service=youtube&hl=en&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Fapp%3Ddesktop%26hl%3Den%26feature%3Dredirect_login%26action_handle_signin%3Dtrue%26next%3D%252Faccount%253Fpbjreload%253D10&uilel=3&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
     public static final String REPORT_HISTORY_BUTTON_EXPECTED_URL ="https://www.youtube.com/reporthistory";
-    public static final String HELP_BUTTON_EXPECTED_URL ="";
+    public static final String HELP_BUTTON_EXPECTED_URL ="#content > div > div.help-panel";
     public static final String SEND_FEEDBACK_BUTTON_EXPECTED_URL ="";
     public static final String ABOUT_EXPECTED_URL ="https://www.youtube.com/about/";
     public static final String PRESS_EXPECTED_URL ="https://www.youtube.com/about/press/";

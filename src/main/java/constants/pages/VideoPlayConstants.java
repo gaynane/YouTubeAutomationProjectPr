@@ -17,4 +17,17 @@ public class VideoPlayConstants {
     public static final String VIDEO_PAUSING_LOCATOR ="";
     public static final String MUTE_BUTTON_LOCATOR ="a[title='Unmute (m)']";
 
+    //click
+//    public static final String VIDEO_PLAYING_CLICK = "";
+//    public static final String TIME_LINE_CLICK = "";
+//    public static final String PLAY_BUTTON_CLICK = "";
+//    public static final String PLAY_NEXT_BUTTON_CLICK = "";
+//    public static final String DURATION_VIDEO_CLICK = "";
+//    public static final String SETTINGS_BUTTON_CLICK = "";
+//    public static final String MINI_PLAYER_BUTTON_CLICK = "";
+//    public static final String THEATER_MODE_BUTTON_CLICK = "";
+//    public static final String FULL_SCREEN_BUTTON_CLICK = "";
+//    public static final String VIDEO_PAUSING_CLICK ="";
+//    public static final String MUTE_BUTTON_CLICK = "";
+
 }

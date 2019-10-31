@@ -44,7 +44,8 @@ public class NavigationMenuTest extends Hooks {
     @Test
     public void checkLeftNavigationBarItemsWhenClickingHamburgerItem(){
         SoftAssert softAssert = new SoftAssert();
-        navigationMenu.getHamburgerItem().click();
+
+        softAssert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getHamburgerItem(), getDriver()), NavigationMenuConstants.LOGO_EXPECTED_URL, NavigationMenuErrorMessages.LOGO_CLICK_ERROR);
 
         softAssert.assertTrue(navigationMenu.getHomeButton().isDisplayed(), NavigationMenuErrorMessages.HOME_BUTTON_ERROR_MESSAGE);
         softAssert.assertTrue(navigationMenu.getTrendingButton().isDisplayed(), NavigationMenuErrorMessages.TRENDING_BUTTON_ERROR_MESSAGE);
@@ -197,6 +198,7 @@ public class NavigationMenuTest extends Hooks {
     @Test
     public void checkRedirectionAfterClickingTheHelpButton() {
         Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getHelpButton(),getDriver()), NavigationMenuConstants.HELP_BUTTON_EXPECTED_URL, NavigationMenuErrorMessages.HELP_BUTTON_CLICK_ERROR);
+
     }
 
     @Test

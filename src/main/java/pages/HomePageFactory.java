@@ -13,16 +13,16 @@ public class HomePageFactory extends BasePageFactory {
     }
 
     @FindBy(css = HomePageConstants.HORIZONTAL_LIST_LOCATOR)
-    WebElement horizontalList;
+    private WebElement horizontalList;
 
     @FindBy(css = HomePageConstants.THUMBNAIL_LOCATOR)
-    WebElement thumbnail;
+    private WebElement thumbnail;
 
     @FindBy(css = HomePageConstants.OVERLAYS_LOCCATOR)
-    WebElement overlays;
+   private WebElement overlays;
 
     @FindBy(css = HomePageConstants.DETALIS_LOCATOR)
-    WebElement detalis;
+    private WebElement detalis;
 
     public WebElement getHorizontalList() {
         return horizontalList;

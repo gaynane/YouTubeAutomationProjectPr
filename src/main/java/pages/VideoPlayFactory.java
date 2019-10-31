@@ -6,37 +6,37 @@ import org.openqa.selenium.support.FindBy;
 
 public class VideoPlayFactory extends HomePageFactory {
     @FindBy(css= VideoPlayConstants.VIDEO_PLAYING_LOCATOR)
-    WebElement videoPlaying;
+    private WebElement videoPlaying;
 
     @FindBy(css= VideoPlayConstants.TIME_LINE_LOCATOR)
-    WebElement timeLine;
+    private WebElement timeLine;
 
     @FindBy(css= VideoPlayConstants.PLAY_BUTTON_LOCATOR)
-    WebElement playButton;
+    private WebElement playButton;
 
     @FindBy(css= VideoPlayConstants.PLAY_NEXT_BUTTON_LOCATOR)
-    WebElement playNextButton;
+    private WebElement playNextButton;
 
     @FindBy(css= VideoPlayConstants.DURATION_VIDEO_LOCATOR)
-    WebElement durationVideo;
+    private WebElement durationVideo;
 
     @FindBy(css= VideoPlayConstants.SETTINGS_BUTTON_LOCATOR)
-    WebElement settingsButton;
+   private WebElement settingsButton;
 
     @FindBy(css= VideoPlayConstants.MINI_PLAYER_BUTTON_LOCATOR)
-    WebElement miniplayerButton;
+    private WebElement miniplayerButton;
 
     @FindBy(css= VideoPlayConstants.THEATER_MODE_BUTTON_LOCATOR)
-    WebElement theaterModeButton;
+    private WebElement theaterModeButton;
 
     @FindBy(css= VideoPlayConstants.FULL_SCREEN_BUTTON_LOCATOR)
-    WebElement fullScreenButton;
+    private WebElement fullScreenButton;
 
     @FindBy(css= VideoPlayConstants.VIDEO_PAUSING_LOCATOR)
-    WebElement videoPausing;
+    private WebElement videoPausing;
 
     @FindBy(css= VideoPlayConstants.MUTE_BUTTON_LOCATOR)
-    WebElement muteButton;
+    private WebElement muteButton;
 
     public VideoPlayFactory(){
         super();
