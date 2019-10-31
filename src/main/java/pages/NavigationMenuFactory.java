@@ -26,73 +26,73 @@ public class NavigationMenuFactory extends BasePageFactory{
     WebElement search;
 
     @FindBy(css= NavigationMenuConstants.VIDEOBUTTON_LOCATOR)
-    private WebElement videoButton;
+    WebElement videoButton;
 
     @FindBy(css= NavigationMenuConstants.APPS_BUTTON_LOCATOR)
-    private WebElement appsButton;
+    WebElement appsButton;
 
     @FindBy(css= NavigationMenuConstants.SETTINGS_BUTTON_LOCATOR)
-    private WebElement settingsButton;
+    WebElement settingsButton;
 
     @FindBy(css= NavigationMenuConstants.SIGNIN_LOCATOR)
-    private WebElement signIn;
+    WebElement signIn;
 
     @FindBy(css= NavigationMenuConstants.HOME_BUTTON_LOCATOR)
-    private WebElement homeButton;
+    WebElement homeButton;
 
     @FindBy(css=NavigationMenuConstants.TRENDING_BUTTON_LOCATOR)
-    private WebElement trendingButton;
+    WebElement trendingButton;
 
     @FindBy(css= NavigationMenuConstants.SUBSCRIPTIONS_BUTTON_LOCATOR)
-    private WebElement subscriptionsButton;
+    WebElement subscriptionsButton;
 
     @FindBy(css= NavigationMenuConstants.LIBRARY_BUTTON_LOCATOR)
-    private WebElement libraryButton;
+    WebElement libraryButton;
 
     @FindBy(css= NavigationMenuConstants.HISTORY_BUTTON_LOCATOR)
-    private WebElement historyButton;
+    WebElement historyButton;
 
     @FindBy(css= NavigationMenuConstants.SIGNIN_LIKE_VIDEOS_TEXT_LOCATOR)
-    private WebElement signInLikeVideosText;
+    WebElement signInLikeVideosText;
 
     @FindBy(css= NavigationMenuConstants.SIGNIN_BUTTON_LOCATOR)
-    private WebElement signInButton;
+    WebElement signInButton;
 
     @FindBy(css = NavigationMenuConstants.GAMING_BUTTON_LOCATOR)
-    private  WebElement gamingButton;
+    WebElement gamingButton;
 
     @FindBy(css= NavigationMenuConstants.MUSIC_BUTTON_LOCATOR)
-    private  WebElement musicButton;
+    WebElement musicButton;
 
     @FindBy(css= NavigationMenuConstants.SPORTS_BUTTON_LOCATOR)
-    private WebElement sportsButton;
+    WebElement sportsButton;
 
     @FindBy(css= NavigationMenuConstants.NEWS_BUTTON_LOCATOR)
-    private  WebElement newsButton;
+    WebElement newsButton;
 
     @FindBy(css= NavigationMenuConstants.BEST_OF_YOUTUBE_LOCATOR)
-    private  WebElement bestOfYouTubeText;
+    WebElement bestOfYouTubeText;
 
     @FindBy(css= NavigationMenuConstants.LIVE_BLACK_BUTTON_LOCATOR)
-    private  WebElement liveBlackButton;
+    WebElement liveBlackButton;
 
     @FindBy(css= NavigationMenuConstants.FASHION_BUTTON_LOCATOR)
-    private  WebElement fashionButton;
+    WebElement fashionButton;
 
     @FindBy(css= NavigationMenuConstants.VIDEO360_BUTTON_LOCATOR)
-    private WebElement video360Button;
+    WebElement video360Button;
 
     @FindBy(css= NavigationMenuConstants.BROWS_CHANNELS_LOCATOR)
-    private WebElement browsChannels;
+    WebElement browsChannels;
 
     @FindBy(css= NavigationMenuConstants.MORE_FROM_YOUTUBE_LOCATOR)
-    private WebElement moreFromYouTubeText;
+    WebElement moreFromYouTubeText;
 
     @FindBy(css= NavigationMenuConstants.LIVE_RED_BUTTON_LOCATOR)
     WebElement liveRedButton;
 
     @FindBy(css= NavigationMenuConstants.SETTINGS_LEFT_BUTTON_LOCATOR)
-    private WebElement settingsLeftButton;
+    WebElement settingsLeftButton;
 
     @FindBy(css= NavigationMenuConstants.REPORT_HISTORY_BUTTON_LOCATOR)
     WebElement reportHistoryButton;

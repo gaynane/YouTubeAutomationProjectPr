@@ -36,7 +36,7 @@ public class VideoPlayTest  {
 
     @Test
     public void checkVideoPlayerItemsWhenClicking(){
-        SoftAssert softAssert = new SoftAssert();
+
         videoPlay.getPlayButton().click();
         videoPlay.getPlayNextButton().click();
         videoPlay.getMuteButton().click();

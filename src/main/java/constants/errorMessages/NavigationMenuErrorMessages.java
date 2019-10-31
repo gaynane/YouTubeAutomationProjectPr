@@ -50,41 +50,41 @@ public class NavigationMenuErrorMessages {
 
     //click
 
-    public static final String LOGO_CLICK_ERROR = "Wrong url";
-    public static final String VIDEO_BUTTON_CLICK_ERROR ="";
-    public static final String SETTINGS_BUTTON_CLICK_ERROR ="";
-    public static final String APPS_BUTTON_CLICK_ERROR ="";
-    public static final String SIGNIN_CLICK_ERROR ="";
+    public static final String LOGO_CLICK_ERROR = "Logo button click didn't redirected to its url";
+    public static final String VIDEO_BUTTON_CLICK_ERROR ="Video button click didn't redirected to its url";
+    public static final String SETTINGS_BUTTON_CLICK_ERROR ="Settings button click didn't redirected to its url";
+    public static final String APPS_BUTTON_CLICK_ERROR ="Apps button click didn't redirected to its url";
+    public static final String SIGNIN_CLICK_ERROR ="SignIn button click didn't redirected to its url";
 
-    public static final String HAMBURGERITEM_CLICK_ERROR ="";
-    public static final String HOME_BUTTON_CLICK_ERROR ="";
-    public static final String TRENDING_BUTTON_CLICK_ERROR ="";
-    public static final String SUBSCRIPTIONS_BUTTON_CLICK_ERROR ="";
-    public static final String LIBRARY_BUTTON_CLICK_ERROR ="";
-    public static final String HISTORY_BUTTON_CLICK_ERROR ="";
-    public static final String MUSIC_BUTTON_CLICK_ERROR ="";
-    public static final String SPORTS_BUTTON_CLICK_ERROR ="";
-    public static final String GAMING_BUTTON_CLICK_ERROR ="";
-    public static final String NEWS_BUTTON_CLICK_ERROR ="";
-    public static final String LIVE_BLACK_BUTTON_CLICK_ERROR ="";
-    public static final String FASHION_BUTTON_CLICK_ERROR ="";
-    public static final String VIDEO360_CLICK_ERROR ="";
-    public static final String BROWS_CHANNELS_CLICK_ERROR ="";
-    public static final String LIVE_RED_BUTTON_CLICK_ERROR ="";
-    public static final String SETTINGS_LEFT_BUTTON_CLICK_ERROR ="";
-    public static final String REPORT_HISTORY_BUTTON_CLICK_ERROR ="";
-    public static final String HELP_BUTTON_CLICK_ERROR ="";
-    public static final String SEND_FEEDBACK_BUTTON_CLICK_ERROR ="";
-    public static final String ABOUT_CLICK_ERROR ="";
-    public static final String PRESS_CLICK_ERROR ="";
-    public static final String COPYRIGHT_CLICK_ERROR ="";
-    public static final String CONTACTUS_CLICK_ERROR ="";
-    public static final String CREATORS_CLICK_ERROR ="";
-    public static final String ADVERTISE_CLICK_ERROR ="";
-    public static final String DEVELOPERS_CLICK_ERROR ="";
-    public static final String TERMS_CLICK_ERROR ="";
-    public static final String PRIVACY_CLICK_ERROR ="";
-    public static final String POLICY_CLICK_ERROR ="";
-    public static final String TEST_NEW_FEATURES_CLICK_ERROR ="";
+    public static final String HAMBURGERITEM_CLICK_ERROR ="Hamburger Item click didn't redirected to its url";
+    public static final String HOME_BUTTON_CLICK_ERROR ="Home button click didn't redirected to its url";
+    public static final String TRENDING_BUTTON_CLICK_ERROR ="Trending button click didn't redirected to its url";
+    public static final String SUBSCRIPTIONS_BUTTON_CLICK_ERROR ="Subscriptions button click didn't redirected to its url";
+    public static final String LIBRARY_BUTTON_CLICK_ERROR ="Library button click didn't redirected to its url";
+    public static final String HISTORY_BUTTON_CLICK_ERROR ="History button click didn't redirected to its url";
+    public static final String MUSIC_BUTTON_CLICK_ERROR ="Music button click didn't redirected to its url";
+    public static final String SPORTS_BUTTON_CLICK_ERROR ="Sports button click didn't redirected to its url";
+    public static final String GAMING_BUTTON_CLICK_ERROR ="Gaming button click didn't redirected to its url";
+    public static final String NEWS_BUTTON_CLICK_ERROR ="News button click didn't redirected to its url";
+    public static final String LIVE_BLACK_BUTTON_CLICK_ERROR ="Live_black button click didn't redirected to its url";
+    public static final String FASHION_BUTTON_CLICK_ERROR ="Fashion button click didn't redirected to its url";
+    public static final String VIDEO360_CLICK_ERROR ="Video360 button click didn't redirected to its url";
+    public static final String BROWS_CHANNELS_CLICK_ERROR ="Brows channels click didn't redirected to its url";
+    public static final String LIVE_RED_BUTTON_CLICK_ERROR ="Live_red button click didn't redirected to its url";
+    public static final String SETTINGS_LEFT_BUTTON_CLICK_ERROR ="Settings left button click didn't redirected to its url";
+    public static final String REPORT_HISTORY_BUTTON_CLICK_ERROR ="Report history click didn't redirected to its url";
+    public static final String HELP_BUTTON_CLICK_ERROR ="Help button click didn't redirected to its url";
+    public static final String SEND_FEEDBACK_BUTTON_CLICK_ERROR ="Sednd Feedback button click didn't redirected to its url";
+    public static final String ABOUT_CLICK_ERROR ="About click didn't redirected to its url";
+    public static final String PRESS_CLICK_ERROR ="Press click didn't redirected to its url";
+    public static final String COPYRIGHT_CLICK_ERROR ="Copyright click didn't redirected to its url";
+    public static final String CONTACTUS_CLICK_ERROR ="Contact Us click didn't redirected to its url";
+    public static final String CREATORS_CLICK_ERROR ="Creators click didn't redirected to its url";
+    public static final String ADVERTISE_CLICK_ERROR ="Advertise click didn't redirected to its url";
+    public static final String DEVELOPERS_CLICK_ERROR ="Developers click didn't redirected to its url";
+    public static final String TERMS_CLICK_ERROR ="Terms click didn't redirected to its url";
+    public static final String PRIVACY_CLICK_ERROR ="Privacy click didn't redirected to its url";
+    public static final String POLICY_CLICK_ERROR ="Policy click didn't redirected to its url";
+    public static final String TEST_NEW_FEATURES_CLICK_ERROR ="Test new features click didn't redirected to its url";
 
 }

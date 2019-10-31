@@ -13,4 +13,5 @@ public class ClickActions {
        BrowserActions.goBack(driver);
        return currentUrl;
     }
+
 }
