@@ -6,10 +6,12 @@ import common.ClickActions;
 import common.WaitActions;
 import constants.errorMessages.NavigationMenuErrorMessages;
 import constants.pages.NavigationMenuConstants;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.NavigationMenuFactory;
@@ -19,13 +21,15 @@ import static org.testng.Assert.*;
 
 public class NavigationMenuTest extends Hooks {
     private NavigationMenuFactory navigationMenu;
+    SoftAssert softAssert = new SoftAssert();
 
 
     @BeforeClass
     public void setup(){
-        navigationMenu = new NavigationMenuFactory(NavigationMenuConstants.URL);
+        navigationMenu = new NavigationMenuFactory("http://www.youtube.com");
         WaitActions.waitSpecificTime(10000);
     }
+
 
     @Test
     public void checkTheItemsNavigationMenuVisible() {
@@ -45,8 +49,8 @@ public class NavigationMenuTest extends Hooks {
     public void checkLeftNavigationBarItemsWhenClickingHamburgerItem(){
         SoftAssert softAssert = new SoftAssert();
 
-        softAssert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getHamburgerItem(), getDriver()), NavigationMenuConstants.LOGO_EXPECTED_URL, NavigationMenuErrorMessages.LOGO_CLICK_ERROR);
-
+       //ClickActions.clickOnTheElement(getDriver(),navigationMenu.getHamburgerItem(), NavigationMenuErrorMessages.HAMBURGERITEM_CLICK_ERROR);
+       WaitActions.waitSpecificTime(10000);
         softAssert.assertTrue(navigationMenu.getHomeButton().isDisplayed(), NavigationMenuErrorMessages.HOME_BUTTON_ERROR_MESSAGE);
         softAssert.assertTrue(navigationMenu.getTrendingButton().isDisplayed(), NavigationMenuErrorMessages.TRENDING_BUTTON_ERROR_MESSAGE);
         softAssert.assertTrue(navigationMenu.getSubscriptionsButton().isDisplayed(), NavigationMenuErrorMessages.SUBSCRIPTIONS_BUTTON_ERROR_MESSAGE);
@@ -88,17 +92,9 @@ public class NavigationMenuTest extends Hooks {
 
         @Test
         public void checkRedirectionLogoClick() {
+
             Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getLogo(), getDriver()), NavigationMenuConstants.LOGO_EXPECTED_URL, NavigationMenuErrorMessages.LOGO_CLICK_ERROR);
         }
-////    @Test
-////    public void checkRedirectionAfterClickingTheSearchField() {
-////        SoftAssert softAssert = new SoftAssert();
-////        softAssert.assertEquals(clickOnTheElementAndGetUrl(navigationMenu.getSearchField()), NavigationMenuConstants.SEARCH_EXPECTED_URL, NavigationMenuErrorMessages.SEARCH_CLICK_ERROR);
-////    }
-////
-////        .sendKeys();
-//
-//        navigationMenu.getSearch().submit()
 
     @Test
     public void checkRedirectionAfterClickingTheVideoButton() {
@@ -106,12 +102,12 @@ public class NavigationMenuTest extends Hooks {
     }
     @Test
     public void checkRedirectionAfterClickingTheSettingsButton() {
-       Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getSettingsButton(),getDriver()), NavigationMenuConstants.SETTINGS_BUTTON_EXPECTED_URL, NavigationMenuErrorMessages.SETTINGS_BUTTON_CLICK_ERROR);
+       Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getSettingsButton(),getDriver()), NavigationMenuConstants.SETTINGS_BUTTON_EXPECTED_MENU, NavigationMenuErrorMessages.SETTINGS_BUTTON_CLICK_ERROR);
     }
 
     @Test
     public void checkRedirectionAfterClickingTheAppsButton() {
-        Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getAppsButton(),getDriver()), NavigationMenuConstants.APPS_BUTTON_EXPECTED_URL, NavigationMenuErrorMessages.APPS_BUTTON_CLICK_ERROR);
+        Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getAppsButton(),getDriver()), NavigationMenuConstants.APPS_BUTTON_EXPECTED_MENU, NavigationMenuErrorMessages.APPS_BUTTON_CLICK_ERROR);
     }
 
     @Test
@@ -121,7 +117,7 @@ public class NavigationMenuTest extends Hooks {
 
     @Test
     public void checkRedirectionAfterClickingTheHamburgerItem() {
-       Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getHamburgerItem(),getDriver()), NavigationMenuConstants.HAMBURGERITEM_EXPECTED_URL, NavigationMenuErrorMessages.HAMBURGERITEM_CLICK_ERROR);
+       Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getHamburgerItem(),getDriver()), NavigationMenuConstants.HAMBURGERITEM_EXPECTED, NavigationMenuErrorMessages.HAMBURGERITEM_CLICK_ERROR);
     }
     @Test
     public void checkRedirectionAfterClickingTheHomeButton() {
@@ -129,6 +125,9 @@ public class NavigationMenuTest extends Hooks {
     }
     @Test
     public void checkRedirectionAfterClickingTheTrendingButton() {
+
+    ClickActions.clickOnTheElement(getDriver(),navigationMenu.getTrendingButton(), NavigationMenuErrorMessages.TRENDING_BUTTON_CLICK_ERROR);
+      WaitActions.waitSpecificTime(10000);
         Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getTrendingButton(),getDriver()), NavigationMenuConstants.TRENDING_BUTTON_EXPECTED_URL, NavigationMenuErrorMessages.TRENDING_BUTTON_CLICK_ERROR);
     }
     @Test
@@ -137,6 +136,7 @@ public class NavigationMenuTest extends Hooks {
     }
     @Test
     public void checkRedirectionAfterClickingTheLibraryButton() {
+
         Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getLibraryButton(),getDriver()), NavigationMenuConstants.LIBRARY_BUTTON_EXPECTED_URL, NavigationMenuErrorMessages.LIBRARY_BUTTON_CLICK_ERROR);
     }
     @Test
@@ -208,7 +208,7 @@ public class NavigationMenuTest extends Hooks {
 
     @Test
     public void checkRedirectionAfterClickingTheAbout() {
-      Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getAbout(),getDriver()), NavigationMenuConstants.ABOUT_EXPECTED_URL, NavigationMenuErrorMessages.ABOUT_CLICK_ERROR);
+       Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(navigationMenu.getAbout(),getDriver()), NavigationMenuConstants.ABOUT_EXPECTED_URL, NavigationMenuErrorMessages.ABOUT_CLICK_ERROR);
     }
 
     @Test

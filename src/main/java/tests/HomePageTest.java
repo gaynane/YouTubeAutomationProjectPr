@@ -2,40 +2,35 @@ package tests;
 
 import base.Hooks;
 import common.ClickActions;
-
-import constants.errorMessages.NavigationMenuErrorMessages;
-import constants.pages.NavigationMenuConstants;
+import common.Video;
+import constants.errorMessages.HomePageErrorMessage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.HomePageFactory;
-
+import java.util.List;
 import static base.BasePage.getDriver;
 import static common.ClickActions.clickOnTheElementAndGetUrl;
 
 public class HomePageTest extends Hooks {
     HomePageFactory homePage;
 
-//    @BeforeClass
-//    public void setup(){
-//        homePage = new HomePageFactory(NavigationMenuConstants.URL);
-//    }
-//
-//    @Test
-//    public void checkTheItemsHomePageVisible(){
-//        SoftAssert softAssert = new SoftAssert();
-//        softAssert.assertTrue(homePage.getVideoArea().isDisplayed(),HomePageErrorMesage.VIDEO_AREA_ERROR_MESSAGE);
-//        softAssert.assertTrue(homePage.getThumbnail().isDisplayed(),HomePageErrorMesage.TUMBNAIL_ERROR_MESSAGE);
-//        softAssert.assertTrue(homePage.getVideoTitle().isDisplayed(),HomePageErrorMesage.VIDEO_TITLE_ERROR_MESSAGE);
-//        softAssert.assertTrue(homePage.getDetalis().isDisplayed(),HomePageErrorMesage.DETALIS_ERROR_MESSAGE);
-//        softAssert.assertTrue(homePage.getChannelName().isDisplayed(),HomePageErrorMesage.CHANNEL_NAME_ERROR_MESSAGE);
-//        softAssert.assertTrue(homePage.getViews().isDisplayed(),HomePageErrorMesage.VIEWS_ERROR_MESSAGE);
-//        softAssert.assertTrue(homePage.getTime().isDisplayed(),HomePageErrorMesage.TIME_ERROR_MESSAGE);
-//        softAssert.assertAll();
-//    }
+
+    @Test
+    public void checkTheItemsHomePageVisible(){
+        List<Video> videos = homePage.getVideos();
+        SoftAssert softAssert = new SoftAssert();
+
+        softAssert.assertTrue(videos.get(0).getImage().isDisplayed(),HomePageErrorMessage.IMAGE_ERROR_MESSAGE);
+        softAssert.assertTrue(videos.get(0).getVideoTitle().isDisplayed(),HomePageErrorMessage.VIDEO_TITLE_ERROR_MESSAGE);
+        softAssert.assertTrue(videos.get(0).getChannelName().isDisplayed(),HomePageErrorMessage.CHANNEL_NAME_ERROR_MESSAGE);
+        softAssert.assertTrue(videos.get(0).getViews().isDisplayed(), HomePageErrorMessage.VIEWS_ERROR_MESSAGE);
+        softAssert.assertTrue(videos.get( 0 ).getTime().isDisplayed(),HomePageErrorMessage.TIME_ERROR_MESSAGE);
+        softAssert.assertAll();
+    }
 //    @Test
 //    public void checkRedirectionAfterClickingTheReportThumbnail() {
-//        Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(homePage.getThumbnail(),getDriver()), "noooooooo");
+//        Assert.assertEquals(ClickActions.clickOnTheElementAndGetUrl(videos.getImage(),getDriver()), "noooooooo");
 //    }
 }

@@ -3,7 +3,9 @@
 <suite name="Suite"  >
     <test name="BasePage">
         <classes>
-            <class name="base.BasePage"/>
+            <class name="tests.NavigationMenuTest"/>
+            <class name="tests.HomePageTest"/>
+
         </classes>
     </test>
 </suite>

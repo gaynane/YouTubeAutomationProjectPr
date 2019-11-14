@@ -6,8 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class NavigationMenuFactory extends BasePageFactory{
 
-    public NavigationMenuFactory(){
+    public NavigationMenuFactory(WebElement hamburgerItem){
         super();
+        this.hamburgerItem = hamburgerItem;
+
     }
     public NavigationMenuFactory(String url){
         super(url);
@@ -17,7 +19,7 @@ public class NavigationMenuFactory extends BasePageFactory{
      private WebElement hamburgerItem;
 
     @FindBy(css = NavigationMenuConstants.LOGO_LOCATOR)
-    private WebElement logo;
+    public WebElement logo;
 
     @FindBy(css = NavigationMenuConstants.SEARCHFIELD_LOCATOR)
     private  WebElement searchField;
@@ -136,7 +138,9 @@ public class NavigationMenuFactory extends BasePageFactory{
     @FindBy(css= NavigationMenuConstants.TEST_NEW_FEATURES_LOCATOR)
     private WebElement testNewFeatures;
 
-    public WebElement getHamburgerItem() {return hamburgerItem;}
+    public WebElement getHamburgerItem() {
+
+        return hamburgerItem;}
     public WebElement getLogo() {return logo;}
     public WebElement getSearchField() {return searchField;}
     public WebElement getSearch() {return search;}
